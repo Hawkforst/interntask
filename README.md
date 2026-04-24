@@ -20,7 +20,7 @@ Přesnou interpretaci úkolu necháme na vás, může to být např., ale ne nut
 
 
 ## Toolchain
-Programujte v Pythonu, můžete volně používat zdroje na internetu. Částečně smíte používat LLMka (a je to do rozumné míry i žádoucí, abyste se zbytečně neznevýhodnili), nicméně byste měli všemu, co nám submitnete, detailně rozumět, včetně jakéhokoliv AI generated kódu. 
+Programujte v Pythonu, můžete volně používat zdroje na internetu. Částečně smíte používat LLMka (a je to do rozumné míry i žádoucí, abyste se zbytečně neznevýhodnili), nicméně byste měli všemu, co nám submitnete, detailně rozumět, včetně jakéhokoliv AI generated kódu. Ideálně AI kód i označte, například tagem <LLM> /code </LLM> 
 
 
 ## Data
