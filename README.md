@@ -1,16 +1,27 @@
-# Data Scientist Intern — Take-Home Task
+# Stáž úkol 
 
-## Scenario
+## Scénář:
 
-You are given 2 years of daily sales data for a single product. Sales depend
-on the day, the price we charged, whether a promotion was running, and the
-day of the week. Your job is to understand the structure of the data, build
-a model that predicts sales from the available features, and forecast the
-next 90 days.
+Dostal/a jste 2 roky denních dat o prodejích jednoho produktu. Prodeje závisí na dni, ceně, kterou jsme účtovali, na tom, zda běžela promo akce, a na dni v týdnu. Vaším úkolem je porozumět struktuře dat, postavit model, který predikuje prodeje z dostupných featur, a vytvořit předpověď na dalších 90 dní - je na vás, zda k úkolu přistoupíte spíše koncepčně nebo prakticky a programátorsky. 
 
-This task is designed to take roughly **one focused working day**. Don't
-over-engineer. We care about how you think, not about squeezing the last
-0.1% of accuracy out of a model.
+Chceme ale v každém případě vidět alespoň část vámi psaného kódu, ideálně vč. enkapsulace do class(es) a využití nějaké machine learning knihovny.
+
+Pokuste se vzít zadaná data a zamyslet se nad úkolem. Cílem není mít perfektní kód, ale je to způsob, jakým my můžeme zhodnotit Váš způsob přemýšlení, přístup k zadaným úkolům, schopnost pracovat (částečně) samostně, apod. 
+
+Přesnou interpretaci úkolu necháme na vás, může to být např., ale ne nutně:
+ - EDA
+ - feature engineering
+ - vizualizace dat
+ - tvorba modelu
+ - porovnávání více modelů
+ - teoretický návrh metodiky
+ - praktická implementace
+ - apod.
+
+
+## Toolchain
+Programujte v Pythonu, můžete volně používat zdroje na internetu. Částečně smíte používat LLMka (a je to do rozumné míry i žádoucí, abyste se zbytečně neznevýhodnili), nicméně byste měli všemu, co nám submitnete, detailně rozumět, včetně jakéhokoliv AI generated kódu. 
+
 
 ## Data
 
