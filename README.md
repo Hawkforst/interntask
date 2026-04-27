@@ -1,8 +1,8 @@
-# Stáž úkol 
+# Stáž - úkol 
 
 ## Scénář:
 
-Dostal/a jste 2 roky denních dat o prodejích jednoho produktu. Prodeje závisí na dni, ceně, kterou jsme účtovali, na tom, zda běžela promo akce, a na dni v týdnu. Vaším úkolem je porozumět struktuře dat, postavit model, který predikuje prodeje z dostupných featur, a vytvořit předpověď na dalších 90 dní - je na vás, zda k úkolu přistoupíte spíše koncepčně nebo prakticky a programátorsky. 
+Dostal/a jste 2 roky denních dat o prodejích Japonské [matchi](https://en.wikipedia.org/wiki/Matcha). Prodeje závisí na dni, ceně, kterou jsme účtovali, na tom, zda běžela promo akce, a na dni v týdnu. Vaším úkolem je porozumět struktuře dat, postavit model, který predikuje prodeje z dostupných featur, a vytvořit předpověď na dalších 90 dní - je na vás, zda k úkolu přistoupíte spíše koncepčně nebo prakticky a programátorsky. 
 
 Chceme ale v každém případě vidět alespoň část vámi psaného kódu, ideálně vč. enkapsulace do class(es) a využití nějaké machine learning knihovny.
 
@@ -25,55 +25,29 @@ Programujte v Pythonu, můžete volně používat zdroje na internetu. Částeč
 
 ## Data
 
-Two CSV files in `data/`:
+Dvě .csv v `data/`:
 
-- `train.csv` — 730 rows, columns: `date`, `t`, `dow`, `price`, `promo`, `sales`
-- `test.csv`  — 90 rows, same columns **except `sales` is withheld**
+- `train.csv` — sloupce: `date`, `t`, `dow`, `price`, `promo`, `sales`
+- `test.csv`  — sloupce stejné **ale bez `sales` **
 
-Column meanings:
+Význam sloupců:
 
-| column  | description                                              |
+| sloupec  | popis                                              |
 |---------|----------------------------------------------------------|
-| `date`  | calendar date                                            |
-| `t`     | day index (0, 1, 2, …), useful as a continuous time axis |
-| `dow`   | day of week, 0 = Monday … 6 = Sunday                     |
-| `price` | price we charged that day (continuous, in currency units)|
-| `promo` | 1 if a promotion was running that day, else 0            |
-| `sales` | units sold that day (target)                             |
+| `date`  | kalendářní datum                                            |
+| `t`     | den index |
+| `dow`   | den v týdnu, 0 = Pondělí … 6 = Nedělě                     |
+| `price` | cena našeho produktu ten den (spojitá)|
+| `promo` | 1 pokud jsme dělali promo akci, jinak 0            |
+| `sales` | jednotek prodáno ten den - náš target                             |
 
-## What we want from you
+## Dodáte
 
-1. **Explore the data.** Describe what structure you find. Plots are welcome.
-2. **Build a model** that predicts `sales` from the features.
-3. **Submit predictions** for every row in `test.csv` as `predictions.csv`
-   with columns `date,sales_pred`.
-4. **Write a short report** (1–2 pages, markdown or PDF):
-   - What structure did you find in the data?
-   - What models did you try? What worked, what didn't, and why?
-   - How did you validate your choices?
-   - What would you do with more time?
+Zip / repo obsahující:
 
-## How we evaluate
-
-- **Understanding of the data** — the write-up matters at least as much as the number.
-- **Predictive performance** on the held-out test set (we'll use RMSE and MAPE).
-- **Code quality** — readable, reproducible, reasonable structure.
-- **Honest reasoning** — we'd rather see a simple model you understand than a
-  complex one you don't.
-
-## Stack
-
-Python. Use any libraries you like (pandas, scikit-learn, statsmodels,
-Prophet, PyTorch — your call). Include a `requirements.txt` or a note of
-what you used so we can reproduce.
-
-## Deliverables
-
-A zip / repo containing:
-
-- your code
+- kód
 - `predictions.csv`
-- the write-up
-- a note on how to run it
+- váš komentář úkolu, kde popisujete svůj myšlenkový proces, co jste stihli udělat, co jste nestihli udělat, ale chtěli jste (chápeme, že úkolu nemůžete věnovat 3 dny času..) - může to být cokoliv od komentářů v kódu nebo Jupyter notebooku, prezentace, readme, Excalidraw diagramu,.. Opět zdůrazňuji, že nám jde hlavně především o to, jak přemýšlíte, jak dokážete řešit open ended problémy, zda umíte zvolit vhodné technické řešení nebo přijít s přístupem, který k nalezení takového řešení povede
 
-Good luck, and have fun with it.
+
+Good luck
